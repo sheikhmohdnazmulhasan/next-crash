@@ -1,4 +1,5 @@
 import getAllPosts from '@/lib/getAllPosts';
+import Link from 'next/link';
 import React from 'react';
 
 const page = async () => {
@@ -9,7 +10,7 @@ const page = async () => {
 
     return (
         <div>
-            Hello World
+            {users.map(user => <p> <Link href={`/users/${user.id}`}>{user.name}</Link> </p>)}
         </div>
     );
 };
