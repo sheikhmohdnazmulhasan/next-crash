@@ -17,7 +17,9 @@ export default function RootLayout({ children }) {
           <ul className="flex gap-4">
             <li> <Link href={'/'}>Home</Link> </li>
             <li> <Link href={'/about'}>About</Link></li>
+            <li> <Link href={'/blogs'}>Blogs</Link></li>
           </ul>
+          <hr />
         </nav>
 
         <div className="my-10">{children}</div>
