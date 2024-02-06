@@ -1,11 +1,13 @@
 import React from 'react';
+import img from '../../public/Images/z.png';
+import Image from 'next/image';
 
 const page = () => {
-    throw new Error('Manual Error')
+    // throw new Error('Manual Error')
     return (
         <main>
             <div className="">
-                about
+                <Image src={img}/>
             </div>
         </main>
     );
